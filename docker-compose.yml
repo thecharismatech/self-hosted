@@ -452,7 +452,7 @@ services:
   nginx:
     <<: *restart_policy
     ports:
-      - "$SENTRY_BIND:80/tcp"
+      - "$SENTRY_BIND:81/tcp"
     image: "nginx:1.25.4-alpine"
     volumes:
       - type: bind
